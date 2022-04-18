@@ -1,0 +1,114 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: rgb(219, 219, 219);
+}
+
+*:first-letter {
+    text-transform: capitalize;
+}
+
+.roundBorder {
+    border-radius: 10px;
+}
+
+.list {
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateRight {
+    display: flex;
+    align-items: center;
+}
+
+#dateNumber {
+    font-size: 50px;
+}
+
+#dateText {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dateMonth,
+#dateNumber,
+#dateText {
+    font-weight: bold;
+
+}
+
+#dateMonth,
+#dateYear {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 160px 35px 80px 80px;
+    column-gap: 15px;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color: lightgray;
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton,
+.orderButton,
+.cleanButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addTaskButton {
+    height: 35px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: rgb(73, 182, 255);
+
+    color: white;
+}
+
+.orderButton {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.cleanButton{
+    background-color: rgba(187, 7, 7, 0.76);
+    color: white;
+}
+.task {
+    background-color:  rgba(0, 132, 255, 0.521);
+    padding: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.done {
+    background-color: rgb(211, 211, 211);
+    text-decoration: line-through;
+}
+
