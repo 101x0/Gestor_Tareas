@@ -44,6 +44,7 @@ function order() {
     tasksContainer.childNodes.forEach(t => {
         t.classList.contains("done") ? done.push(t) : toDo.push(t);
     })
+    inicio();
     return [toDo, done];
 }
 
