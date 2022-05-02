@@ -112,3 +112,6 @@ input:focus {
     text-decoration: line-through;
 }
 
+.fa-bars{
+    pointer-events: none;
+}
