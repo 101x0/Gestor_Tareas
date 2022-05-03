@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"
         integrity="sha512-Eezs+g9Lq4TCCq0wae01s9PuNWzHYoCMkE97e2qdkYthpI0pzC3UGB03lgEHn2XM85hDOUF6qgqqszs+iXU4UA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -27,12 +27,13 @@
                     <div id="dateMonth"></div>
                     <div id="dateYear"></div>
                 </div>
+                <input type="date" id="dateSelect">
             </div>
             <div id="dateText"></div>
         </div>
 
         <form onsubmit="addNewTask(event)">
-            <input type="text" name="taskTest" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
+            <input type="text" id="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
             <button type="submit" class="addTaskButton">+</button>
             <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
             <button type="button" class="cleanButton roundBorder" onclick="cleanTasks()">Limpiar</button>
@@ -40,9 +41,6 @@
 
         <div id="tasksContainer"></div>
     </div>
-
-
-
 
 </body>
 
